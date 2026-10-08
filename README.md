@@ -3,7 +3,7 @@
 **An operator HMI and barcode/QR traceability module for an automated end-of-line (EOL) test machine for automotive side door latches.** The PLC-controlled machine validates each latch: functionality, engagement, release and auto-canceling operation. This Python HMI then generates and prints a unique traceability label for each validated part, and keeps a full print log and shift-wise reports.
 
 ![Python](https://img.shields.io/badge/Python-3-3776AB)
-![Tkinter](https://img.shields.io/badge/HMI-Tkinter-informational)
+![PyQt](https://img.shields.io/badge/HMI-PyQt-41CD52)
 ![Printer](https://img.shields.io/badge/printer-Zebra%20ZPL-black)
 ![Labels](https://img.shields.io/badge/labels-QR%20code-success)
 
@@ -64,7 +64,7 @@ More detail is in [docs/system_overview.md](docs/system_overview.md).
 
 ## Tech stack
 
-Python 3 · Tkinter · Pillow · reportlab · openpyxl · pywin32 (`win32print`) · ZPL · PyInstaller
+Python 3 · PyQt · Pillow · reportlab · openpyxl · pywin32 (`win32print`) · ZPL · PyInstaller
 
 ## Source code
 
@@ -90,7 +90,7 @@ It runs on Windows with Python 3 (`pip install -r requirements.txt`, then `pytho
 
 ## Skills demonstrated
 
-- Industrial HMI design for the shop floor (Python / Tkinter)
+- Industrial HMI design for the shop floor (Python / PyQt)
 - Barcode and QR traceability: serial number scheme, label layout, ZPL programming, raw printing to Zebra printers
 - Integration of an operator station with a PLC-controlled end-of-line test machine
 - Role-based access control and configuration management with JSON
